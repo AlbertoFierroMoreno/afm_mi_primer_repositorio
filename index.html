@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            padding: 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        article {
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        form {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recetas de Cocina</h1>
+        <nav>
+            <ul>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#agregar">Agregar Receta</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="recetas">
+            <h2>Recetas Populares</h2>
+            <article>
+                <h3>Ensalada César</h3>
+                <p><strong>Ingredientes:</strong> Lechuga, pollo, queso parmesano, crutones, aderezo César.</p>
+                <p><strong>Instrucciones:</strong> Mezcla la lechuga con el aderezo, agrega el pollo y los crutones. Espolvorea con queso parmesano.</p>
+            </article>
+            <article>
+                <h3>Spaghetti Carbonara</h3>
+                <p><strong>Ingredientes:</strong> Spaghetti, huevos, queso parmesano, panceta, ajo.</p>
+                <p><strong>Instrucciones:</strong> Cocina el spaghetti. En una sartén, cocina la panceta y el ajo. Mezcla con el spaghetti y los huevos batidos. Añade queso parmesano.</p>
+            </article>
+        </section>
+        
+        <section id="agregar">
+            <h2>Agregar Nueva Receta</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre de la receta:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="ingredientes">Ingredientes:</label>
+                <textarea id="ingredientes" name="ingredientes" rows="4" required></textarea>
+                
+                <label for="instrucciones">Instrucciones:</label>
+                <textarea id="instrucciones" name="instrucciones" rows="6" required></textarea>
+                
+                <button type="submit">Agregar Receta</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Recetas de Cocina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
