@@ -1,4 +1,4 @@
-#Nombre del Proyecto
+#Intercambio de Recetas
 
 Descripción breve sobre lo que hace el proyecto y su propósito.
 
